@@ -3,134 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-</head>
-<body style="background-image: url(textura-com-uma-cor-neutra-80418343\ \(1\).jpg);">
+    <style>
+        p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #cabeca{
+            background-color: rgba(0, 0, 0, 0.801);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            height: 80px;
+            margin-bottom: 5px;
+            padding:8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #cabeca > a{
+            text-decoration: none;
+            color: white;
+            width: 500px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
-<main> 
-    <section>
-        <h1 style="text-align: center; ">Cadastro</h1>
-        <hr>
-        <br>
+        #itens{
+            margin-right: 40px;
+            margin-top: 25px;
+        }
+        #itens a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #cabeca h1{
+            margin-left: 3%;
+        }
+        #cabeca h2{
+            margin-right: 13%;
+            margin-top: 4%;
+            
+        }
+        #meio{
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+        }
+        #conteudo{
+            
+            width: 40%;
+            text-align: justify;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.801);
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #conteudo div{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 15px;
+            margin-left: 30%;
+        }
+        #conteudo input{
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        #conteudo select{
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        #conteudo button{
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        #conteudo button > a{
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+        #direita{
+            background-color: rgba(0, 0, 0, 0.801);
+            margin-left: 2%;
+            width: 35%;
+        }
+        #direita img{
+            width: 80%;
+            margin: 5%;
+            margin-left: 10%;
+            position: sticky;
+            top: 10px;
+        }
+        #esquerda{
+            background-color: rgba(0, 0, 0, 0.801);
+            margin-right: 2%;
+        }
+        #esquerda img{
+            width: 90%;
+            margin: 5%;
+            position: sticky;
+            top: 10px;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.801);
+            height: 50px;
+            margin-bottom: 5px;
+            padding:8px;
+            display: flex;
+            justify-content: row;
 
-    <form style="text-align: center; ">
-        <div>
-            <label for="texto">Nome:</label>
-            <input type="text" id="texto" placeholder="Informe o seu nome">
-        </div>    
-        <br>
-        <div>
-            <label for="CPF">CPF:</label>
-            <input type="number" id="CPF" placeholder="123.456.789-00">
-        </div>
-        <br>
-        <div>
-            <label for="data">Data de nascimento:</label>
-            <input type="date" id="data" placeholder="Informe a sua data de nascimento...">
-        </div>
-        <br>
-        <div>
-            <label for="Peso">Peso:</label>
-            <input type="text" id="Peso" placeholder="Ex: 70Kg">
-        </div>
-        <br>
-        <div>
-            <label for="altura">Altura:</label>
-            <input type="text" id="altura" placeholder="Ex: 1.78m">
-        </div>
-        <br>
-        <div>
-            <label for="E-mail">E-mail:</label>
-            <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
-        </div>
-        <br>
-        <div>
-            <label for="E-mail">2° e-mail:</label>
-            <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
-        </div>
-        <br>
-        <div>
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" placeholder="(16) 99192-9394">
-        </div>
-        <br>
-        <div>
-            <label for="Sexo"></label>
-            Sexo: <select id="Sexo">
-                <option value="" disabled selected>Sexo</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Masculino">Masculino</option>
-            </select>
-
-        </div>
-        <br>
-        <div>
-            <label for="senha">Senha: </label>
-            <input type="password" id="senha">
-        </div>
-        <br>
-        <button><a href="https://luigivanzella.github.io/modalidade/"> Finalizar Cadastro</a></button>
-        <br>
-        <br>
-    
-    <div>
-        <button>alterar</button>
-        <button>excluir</button>
-    </div>
-    </section>
-    </form>
-    <br>
-    <footer>
-    <center>
-    <form>
-        <fieldset>
+            
+        }
+        nav a{
+            margin-top: 20px;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            margin-left: 20px;
+            
+        }
+        footer{
+            margin-left: 30%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.801);
+            width: 38%;
+        }
+        table,tr,td,th{
+            margin-left: 30%;
+            background-color: black;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 10px;
+            color: aliceblue;
+        }
         
+        
+    </style>
+</head>
+<body style="background-image: url(imagemdefundo\ academia.jpeg);">
+    <div id="cabeca">
+        <a href="https://luigivanzella.github.io/Inicio/"><h1>ACADEMIA IFSP</h1></a>
+        <h2 style="font-size: 30px;">Cadastro</h2>
+        <div id="itens">
+            <a href="https://luigivanzella.github.io/modalidade/">MODALIDADE</a>
+            <a href="https://luigivanzella.github.io/matricula/">MATRICULA</a>
+            <a href="https://luigivanzella.github.io/relatorio/">RELATORIO</a>
+        </div>
+    </div>
+    <div id="meio">
+        <div id="esquerda">
+            <img src="imagem_neon_academia.jpeg" alt="">
+        </div>
+        <div id="conteudo">
+            <form style="text-align: center; ">
+                <div>
+                    <label for="texto">Nome:</label>
+                    <input type="text" id="texto" placeholder="Informe o seu nome">
+                </div>
+                
+                <div>
+                    <label for="CPF">CPF:</label>
+                    <input type="number" id="CPF" placeholder="123.456.789-00">
+                </div>
+                
+                <div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data" placeholder="Informe a sua data de nascimento...">
+                </div>
+                
+                <div>
+                    <label for="Peso">Peso:</label>
+                    <input type="text" id="Peso" placeholder="Ex: 70Kg">
+                </div>
+                
+                <div>
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" placeholder="Ex: 1.78m">
+                </div>
+                
+                <div>
+                    <label for="E-mail">E-mail:</label>
+                    <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
+                </div>
+                
+                <div>
+                    <label for="E-mail">2° e-mail:</label>
+                    <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
+                </div>
+                
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" placeholder="(16) 91234-5678">
+                </div>
+                
+                <div>
+                    <label for="Sexo"></label>
+                sexo:<select id="Sexo">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                        </select>
+                
+                </div>
+                
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha">
+                </div>
+                
+                <button><a href="https://luigivanzella.github.io/modalidade/"> Finalizar Cadastro</a></button>
+            </form>
+        </div>
+        <div id="direita">
+            <img src="imagemadademia2.jpeg" alt="">
+        </div>
+    </div>
+    <nav>
+        <div style="margin-left:30%;">
+        <a href="">LISTAR APENAS UM</a>
+        <a href="">ALTERAR</a>
+        <a href="">EXCLUIR</a>
+        </div>
+    </nav>
+    <footer>
         <table>
             <tr>
                 <th>INFORMAÇÕES</th>
-                <th></th>
+                
             </tr>
             <tr>
-                <td>Nome:</td>
-                <td></td>
+                <td>Nome</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>CPF:</td>
-                <td></td>
+                <td>CPF</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>Data de nascimento:</td>
-                <td></td>
+                <td>Data de nascimento</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>Peso:</td>
-                <td></td>
+                <td>Peso</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>Altura:</td>
-                <td></td>
+                <td>Altura</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>E-mail:</td>
-                <td></td>
+                <td>E-mail</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>2º E-mail:</td>
-                <td></td>
+                <td>2º E-mail</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>Telefone:</td>
-                <td></td>
+                <td>Telefone</td>
+                <td>.</td>
             </tr>
             <tr>
-                <td>Sexo:</td>
-                <td></td>
+                <td>Sexo</td>
+                <td>.</td>
             </tr>
         </table>
-        </fieldset>
-    </form>
-    </center>
     </footer>
-</main>
-
+    
 </body>
 </html>
